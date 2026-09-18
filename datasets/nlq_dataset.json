@@ -1,0 +1,29 @@
+[
+  {
+    "id": "NLQ-001",
+    "question": "Qual foi o total de vendas no mês de agosto?",
+    "reference_context": "O total de vendas de agosto foi R$ 1.250.000.",
+    "acceptance_criteria": [
+      "Responder diretamente à pergunta.",
+      "Não inventar valores.",
+      "Usar os dados do contexto confiável.",
+      "Manter consistência factual."
+    ],
+    "expected_sql_contains": [
+      "SELECT"
+    ]
+  },
+  {
+    "id": "NLQ-002",
+    "question": "Quantos pedidos foram aprovados?",
+    "reference_context": "A fonte confiável informa 42 pedidos aprovados.",
+    "acceptance_criteria": [
+      "Informar 42 pedidos aprovados quando a fonte consultada corresponder ao contexto de referência.",
+      "Não adicionar números sem suporte.",
+      "Responder de forma objetiva."
+    ],
+    "expected_sql_contains": [
+      "SELECT"
+    ]
+  }
+]

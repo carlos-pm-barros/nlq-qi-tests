@@ -1,0 +1,34 @@
+{
+  "question": "Quantos pedidos foram aprovados?",
+  "answer": "Foram aprovados 42 pedidos.",
+  "generated_sql": "SELECT approved_orders FROM sales WHERE month = 'agosto'",
+  "retrieved_contexts": [
+    "Referência de demonstração: agosto possui total de vendas de R$ 1.250.000 e 42 pedidos aprovados.",
+    "Para perguntas sobre vendas use a coluna total da tabela sales. Para pedidos aprovados use approved_orders. Filtre o mês pela coluna month.",
+    "Tabela sales: id INTEGER, month TEXT, total REAL, approved_orders INTEGER. month contém o mês em português; total contém o total de vendas; approved_orders contém a quantidade de pedidos aprovados."
+  ],
+  "judge_results": [
+    {
+      "execution": 1,
+      "score": 0.95,
+      "reason": "Resposta aderente ao contexto e aos critérios de aceite."
+    },
+    {
+      "execution": 2,
+      "score": 0.95,
+      "reason": "Resposta aderente ao contexto e aos critérios de aceite."
+    },
+    {
+      "execution": 3,
+      "score": 0.95,
+      "reason": "Resposta aderente ao contexto e aos critérios de aceite."
+    }
+  ],
+  "quality_gate": {
+    "average": 0.95,
+    "minimum": 0.95,
+    "stddev": 0.0,
+    "passed": true,
+    "failures": []
+  }
+}
